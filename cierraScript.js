@@ -53,7 +53,7 @@ caterTxt.textContent="Place an Order";
 cater.addEventListener("click", learnClick);
 
 function learnClick() {
-  parent.location='mailto:barnardbaking@gmail.com';
+  window.open('mailto:barnardbaking@gmail.com');
 
 }
 
@@ -113,7 +113,7 @@ const bakeryMenuCard = document.createElement('div');
 bakeryMenuCard.setAttribute('class', 'fullCard');
 
 const bakeryMenuImg = document.createElement('img');
-bakeryMenuImg.src = "getBakedMenu1.png";
+bakeryMenuImg.src = "photos/getBakedMenu1Brdr.png";
 
 bakeryMenuCard.appendChild(bakeryMenuImg);
 bakeryMenu.appendChild(bakeryMenuCard);
@@ -131,28 +131,28 @@ container.setAttribute('class', 'container');
 const redVelvCard = document.createElement('div');
 redVelvCard.setAttribute('class', 'card');
 const redVelvImg = document.createElement('img');
-redVelvImg.src="redVelvetCup.png";
+redVelvImg.src="photos/smoresBrdr.jpeg";
 const redVelvTxt = document.createElement('p');
-redVelvTxt.textContent = "Red Velvet Cupcakes";
+redVelvTxt.textContent = "S\'mores bars";
 
 redVelvCard.addEventListener("click", redVelvClick);
 
 function redVelvClick() {
-  window.open("redVelvetCup.png");
+  window.open("photos/smoresBrdr.jpeg");
 }
 
 // create cheesecake element
 const cheeseCakeCard = document.createElement('div');
 cheeseCakeCard.setAttribute('class', 'card');
 const cheeseCakeImg = document.createElement('img');
-cheeseCakeImg.src="cake.png";
+cheeseCakeImg.src="photos/redChsCakeBrdr.jpeg";
 const cheeseCakeTxt = document.createElement('p');
 cheeseCakeTxt.textContent = "Strawbery Cheesecake";
 
 cheeseCakeCard.addEventListener("click", cheeseCakeClick);
 
 function cheeseCakeClick() {
-  window.open("cake.png");
+  window.open("photos/redChsCakeBrdr.jpeg");
 }
 
 
@@ -160,58 +160,31 @@ function cheeseCakeClick() {
 const fPeb = document.createElement('div');
 fPeb.setAttribute('class', 'card');
 const fPebImg = document.createElement('img');
-fPebImg.src="fPebbles.png";
+fPebImg.src="photos/fPebblesBrdr.png";
 const fPebTxt = document.createElement('p');
 fPebTxt.textContent ="Fruity Pebble Cupcakes";
 
 fPeb.addEventListener("click", fPebClick);
 
 function fPebClick() {
-  window.open("fpebbles.png");
+  window.open("photos/fpebbles.png");
 }
 
 // chocolate cupcakes
 const chocoCup = document.createElement('div');
 chocoCup.setAttribute('class', 'card');
 const chocoCupImg = document.createElement('img');
-chocoCupImg.src="chocoCup.png";
+chocoCupImg.src="photos/prettyCakeBrdr.jpeg";
 const chocoCupTxt = document.createElement('p');
 chocoCupTxt.textContent="Triple Chocolate Cupcakes";
 
 chocoCup.addEventListener("click", chocoCupClick);
 
 function chocoCupClick() {
-  window.open("chocoCup.png");
+  window.open("photos/prettyCakeBrdr.jpeg");
 }
 
 
-// cookies
-const cookie = document.createElement('div');
-cookie.setAttribute('class', 'card');
-const cookieImg = document.createElement('img');
-cookieImg.src="cookies.png";
-const cookieTxt = document.createElement('p');
-cookieTxt.textContent="Chocolate Chip Cookies - $10 for a dozen";
-
-cookie.addEventListener("click", cookieClick);
-
-function cookieClick() {
-  window.open("cookies.png");
-}
-
-// pecan pie
-const pPie = document.createElement('div');
-pPie.setAttribute('class', 'card');
-const pPieImg = document.createElement('img');
-pPieImg.src="pecanPie.png";
-const pPieTxt = document.createElement('p');
-pPieTxt.textContent="Pecan Pie - $15";
-
-pPie.addEventListener("click", pPieClick);
-
-function pPieClick() {
-  window.open("pecanPie.png");
-}
 // add text
 container.appendChild(favTab);
 
@@ -248,7 +221,7 @@ findUs.textContent="Find Us Online";
 const insta = document.createElement('div');
 insta.setAttribute('class', 'smallCard');
 const instaLogo = document.createElement('img');
-instaLogo.src="instagramLogo.png";
+instaLogo.src="photos/instagramLogo.png";
 insta.appendChild(instaLogo);
 
 // how to make stuff clickable
@@ -262,7 +235,7 @@ function instaClick() {
 const fb = document.createElement('div');
 fb.setAttribute('class', 'smallCard');
 const fbLogo = document.createElement('img');
-fbLogo.src="facebookLogo.png";
+fbLogo.src="photos/facebookLogo.png";
 fb.appendChild(fbLogo);
 
 fb.addEventListener("click", fbOpen);
@@ -275,7 +248,7 @@ function fbOpen() {
 const twit = document.createElement('div');
 twit.setAttribute('class', 'smallCard');
 const twitLogo = document.createElement('img');
-twitLogo.src="twitterLogo.png";
+twitLogo.src="photos/twitterLogo.png";
 twit.appendChild(twitLogo);
 
 twit.addEventListener("click", twitOpen);
