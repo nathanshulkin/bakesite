@@ -1,0 +1,253 @@
+/*
+Nathan Shulkin
+Cierra's Bakery stylesheet
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /*font-family: 'Verdana', sans-serif;*/
+  background-image: url("cierraBck1.png");
+  background-image: radial-gradient(#ffffff, #b677d4);
+  background-size: auto;
+}
+
+@font-face {
+  font-family: cierraFont;
+  src: url(fjallaone-regular.ttf);
+}
+
+div {
+  font-family: cierraFont;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-color: transparent;
+  background-size: 100%;
+  margin: 0 0 2rem 0;
+  font-size: 3rem;
+  color: white;
+  text-shadow: #000 4px 2px 10px;
+}
+
+h2 {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-color: transparent;
+  background-size: 100%;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: #000 4px 2px 10px;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  text-shadow: #000 4px 2px 10px;
+  color: #FFFFFF;
+  padding: 2%;
+  margin: 0;
+  background-color: transparent;
+  background-size: 100%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1.2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+  float: left;
+  width: 46.6%;
+  padding: 6px;
+}
+
+.logoCard {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all .2s linear;
+  float: center;
+  width: 60%;
+  padding: 2px;
+}
+
+.card:hover {
+  transform: translate3d(0, -2px, 0);
+}
+
+.smallCard {
+  margin: 2rem 8rem;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+  float: left;
+  width: 12%;
+  height: 12%;
+  padding: 6px;
+}
+
+.smallCard:hover {
+  transform: translate3d(0, -2px, 0);
+}
+
+.fullCard {
+  margin: 1.2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+  float: left;
+  width: 100%;
+  padding: 6px;
+}
+
+.thinCard {
+  display: flex;
+  width: 80%;
+  height: 10%;
+  position: relative;
+  cursor: pointer;
+}
+
+.tinyCard {
+  display: block;
+  width: 16%;
+  height: 8%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-inline-start: auto;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  float: inline-start;
+}
+
+.tinyLogoCard {
+  display: flex;
+  width: 8%;
+  height: 10%;
+  position: relative;
+  cursor: pointer;
+  text-align: right;
+  float: inline-start;
+  margin-top: 0px;
+  margin-left: -10px;
+  margin-bottom: -14px;
+  transform: rotate(-8deg);
+}
+
+.menuCard:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3d(0, -2px, 0);
+  background-image: url("banner.png");
+}
+
+
+/* Upper Menu */
+.menuUp {
+  background-color: black;
+  background-image: linear-gradient(#81f0a3, #b677d4);
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  border: black;
+  cursor: pointer;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  align-self: center;
+  align-content: flex-start;
+  text-align: right;
+  align-items: flex-start;
+  opacity: 0.9;
+  z-index: 0;
+  overflow: visible;
+  margin-top: -30px;
+}
+
+
+/* Drop down Button */
+.dropbtn {
+  background-color: #363636;
+  color: white;
+  padding: 12px 12px 12px 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  border-radius: 0px 25px 25px 0px;
+  border: 2px solid #ffffff;
+  width: 8%;
+  align-self: center;
+  align-content: center;
+  opacity: 0.8;
+  margin: 0px -35px;
+  z-index: 1;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3d(0, -2px, 0);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0.8;
+  margin: 40% -80%;
+  padding: 0px 10px 0px 12px;
+}
+
+/* Links inside the dropdown or content inside dropdown*/
+.dropdown-content .menuCard {
+  padding: 4px 5px 4px 5px;
+  text-decoration: none;
+  display: block;
+  width: 150%;
+  height: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 25px 25px 0px;
+  border: 0px solid black;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display: inline-block;}
