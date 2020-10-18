@@ -44,7 +44,7 @@ customTxt.textContent="Menu";
 custom.addEventListener("click", menuClick);
 
 function menuClick() {
-  window.open('photos/getBakedMenu1Brdr.png');
+  window.open('photos/getBakedMenuNew.png');
 }
 
 const cater = document.createElement('div');
@@ -115,7 +115,8 @@ const bakeryMenuCard = document.createElement('div');
 bakeryMenuCard.setAttribute('class', 'fullCard');
 
 const bakeryMenuImg = document.createElement('img');
-bakeryMenuImg.src = "photos/getBakedMenu1Brdr.png";
+bakeryMenuImg.src = "photos/getBakedMenuNew.png";
+bakeryMenuImg.addEventListener("click", menuClick);
 
 bakeryMenuCard.appendChild(bakeryMenuImg);
 bakeryMenu.appendChild(bakeryMenuCard);

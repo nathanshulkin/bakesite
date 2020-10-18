@@ -9,7 +9,6 @@ Cierra's Bakery stylesheet
 
 html {
   /*font-family: 'Verdana', sans-serif;*/
-  background-image: url("cierraBck1.png");
   background-image: radial-gradient(#ffffff, #b677d4);
   background-size: auto;
   cursor: default;
