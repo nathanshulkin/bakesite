@@ -31,6 +31,7 @@ logoMenu.setAttribute('class', 'tinyLogoCard');
 const logoImg = document.createElement('img');
 logoImg.src = "cierraLogo/LogoFiles/ForWeb/small.png";
 logoImg.style.position="absolute";
+logoImg.style.marginTop="15px";
 
 logoMenu.appendChild(logoImg);
 menuUp.appendChild(logoMenu);
