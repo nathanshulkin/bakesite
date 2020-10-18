@@ -101,12 +101,12 @@ img {
 }
 
 .smallCard {
-  margin: 2rem 8rem;
+  margin: auto;
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
   float: left;
-  width: 12%;
+  width: 10%;
   height: 12%;
   padding: 6px;
   cursor: pointer;
