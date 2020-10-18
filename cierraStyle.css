@@ -12,6 +12,7 @@ html {
   background-image: url("cierraBck1.png");
   background-image: radial-gradient(#ffffff, #b677d4);
   background-size: auto;
+  cursor: default;
 }
 
 @font-face {
@@ -64,8 +65,6 @@ p {
 
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   height: auto;
 }
@@ -73,31 +72,33 @@ img {
 .container {
   display: flex;
   flex-wrap: wrap;
+  cursor: default;
 }
 
 .card {
-  margin: 1.2rem;
+  margin: auto;
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
   float: left;
-  width: 46.6%;
+  max-width: 42.6%;
   padding: 6px;
 }
 
 .logoCard {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border-radius: 4px;
   overflow: hidden;
   transition: all .2s linear;
-  float: center;
-  width: 60%;
-  padding: 2px;
+  max-height: 69%;
+  max-width: 63%;
+  padding-right: 12.5%;
 }
 
 .card:hover {
   transform: translate3d(0, -2px, 0);
+  z-index: 0;
+  cursor: pointer;
 }
 
 .smallCard {
@@ -109,10 +110,12 @@ img {
   width: 12%;
   height: 12%;
   padding: 6px;
+  cursor: pointer;
 }
 
 .smallCard:hover {
   transform: translate3d(0, -2px, 0);
+  z-index: 0;
 }
 
 .fullCard {
@@ -120,8 +123,9 @@ img {
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
-  float: left;
-  width: 100%;
+  margin: auto;
+  max-height: 80%;
+  max-width: 90%;
   padding: 6px;
 }
 
@@ -142,9 +146,9 @@ img {
   margin-left: auto;
   margin-inline-start: auto;
   position: relative;
-  cursor: pointer;
   text-align: center;
   float: inline-start;
+  cursor: pointer;
 }
 
 .tinyLogoCard {
@@ -184,9 +188,13 @@ img {
   text-align: right;
   align-items: flex-start;
   opacity: 0.9;
-  z-index: 0;
+  z-index: 1;
   overflow: visible;
   margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 90%;
+  max-width: 90%;
 }
 
 

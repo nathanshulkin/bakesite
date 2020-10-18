@@ -17,7 +17,7 @@ bio.textContent="Delicious and Safe Homemade Sweets Straight Out Of Colorado Spr
 // create contact description
 const contact = document.createElement('h2');
 contact.textContent="Send an email to BarnardBaking@gmail.com to place your order or ask about prices.";
-
+contact.addEventListener("click", learnClick)
 
 // create upper menu
 const menuUp = document.createElement('div');
@@ -42,7 +42,7 @@ customTxt.textContent="Menu";
 custom.addEventListener("click", menuClick);
 
 function menuClick() {
-  alert("Workin' on the menu.");
+  window.open('photos/getBakedMenu1Brdr.png');
 }
 
 const cater = document.createElement('div');
@@ -76,7 +76,7 @@ favTxt.textContent="Our Favorites";
 favorites.addEventListener("click", favClick);
 
 function favClick() {
-  window.scrollTo(0, 2100);
+  window.scrollTo(0, 2650);
 }
 
 const us = document.createElement('div');
@@ -87,7 +87,7 @@ usTxt.textContent="Find Us Online";
 us.addEventListener("click", usClick);
 
 function usClick() {
-  window.scrollTo(0, 1775);
+  window.scrollTo(0, 2350);
 }
 
 //add menu
