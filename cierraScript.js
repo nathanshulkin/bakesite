@@ -134,28 +134,28 @@ container.setAttribute('class', 'container');
 const redVelvCard = document.createElement('div');
 redVelvCard.setAttribute('class', 'card');
 const redVelvImg = document.createElement('img');
-redVelvImg.src="photos/smoresBrdr.jpeg";
+redVelvImg.src="photos/smores.jpg";
 const redVelvTxt = document.createElement('p');
 redVelvTxt.textContent = "S\'mores bars";
 
 redVelvCard.addEventListener("click", redVelvClick);
 
 function redVelvClick() {
-  window.open("photos/smoresBrdr.jpeg");
+  window.open("photos/smores.jpg");
 }
 
 // create cheesecake element
 const cheeseCakeCard = document.createElement('div');
 cheeseCakeCard.setAttribute('class', 'card');
 const cheeseCakeImg = document.createElement('img');
-cheeseCakeImg.src="photos/redChsCakeBrdr.jpeg";
+cheeseCakeImg.src="photos/pinkBlueCupcakes.JPG";
 const cheeseCakeTxt = document.createElement('p');
-cheeseCakeTxt.textContent = "Strawbery Cheesecake";
+cheeseCakeTxt.textContent = "Vanilla Swirl Cupcakes";
 
 cheeseCakeCard.addEventListener("click", cheeseCakeClick);
 
 function cheeseCakeClick() {
-  window.open("photos/redChsCakeBrdr.jpeg");
+  window.open("photos/pinkBlueCupcakes.JPG");
 }
 
 
@@ -163,7 +163,7 @@ function cheeseCakeClick() {
 const fPeb = document.createElement('div');
 fPeb.setAttribute('class', 'card');
 const fPebImg = document.createElement('img');
-fPebImg.src="photos/fPebblesBrdr.png";
+fPebImg.src="photos/fPebbles.png";
 const fPebTxt = document.createElement('p');
 fPebTxt.textContent ="Fruity Pebble Cupcakes";
 
@@ -177,39 +177,60 @@ function fPebClick() {
 const chocoCup = document.createElement('div');
 chocoCup.setAttribute('class', 'card');
 const chocoCupImg = document.createElement('img');
-chocoCupImg.src="photos/prettyCakeBrdr.jpeg";
+chocoCupImg.src="photos/prettyCake.png";
 const chocoCupTxt = document.createElement('p');
-chocoCupTxt.textContent="Triple Chocolate Cupcakes";
+chocoCupTxt.textContent="Strawberry Candy Cake";
 
 chocoCup.addEventListener("click", chocoCupClick);
 
 function chocoCupClick() {
-  window.open("photos/prettyCakeBrdr.jpeg");
+  window.open("photos/prettyCake.png");
+}
+
+// monkey bread
+const mBread = document.createElement('div');
+mBread.setAttribute('class', 'card');
+const mBreadImg = document.createElement('img');
+mBreadImg.src="photos/cinRollMonkey.JPG"; 
+const mBreadTxt = document.createElement('p');
+mBreadTxt.textContent="Cinammon Roll Monkey Bread";
+
+chocoCup.addEventListener("click", cinClick);
+
+function cinClick() {
+  window.open("photos/cinRollMonkey.JPG");
 }
 
 
 // add text
 container.appendChild(favTab);
 
+// add cheeseCake
+container.appendChild(cheeseCakeCard);
+cheeseCakeCard.appendChild(cheeseCakeImg);
+cheeseCakeCard.appendChild(cheeseCakeTxt);
+
+// add chococupp
+container.appendChild(chocoCup);
+chocoCup.appendChild(chocoCupImg);
+chocoCup.appendChild(chocoCupTxt);
+
+
 // add fPeb
 container.appendChild(fPeb);
 fPeb.appendChild(fPebImg);
 fPeb.appendChild(fPebTxt);
 
-// add cheeseCake
-container.appendChild(cheeseCakeCard);
-cheeseCakeCard.appendChild(cheeseCakeImg);
-cheeseCakeCard.appendChild(cheeseCakeTxt);
 
 // add red velv
 container.appendChild(redVelvCard);
 redVelvCard.appendChild(redVelvImg);
 redVelvCard.appendChild(redVelvTxt);
 
-// add chococupp
-container.appendChild(chocoCup);
-chocoCup.appendChild(chocoCupImg);
-chocoCup.appendChild(chocoCupTxt);
+// add monk bread
+container.appendChild(mBread);
+mBread.appendChild(mBreadImg);
+mBread.appendChild(mBreadTxt);
 
 
 
