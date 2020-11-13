@@ -1,5 +1,5 @@
 // Nathan Shulkin
-// Cierra's Baker script
+// Cierra's Bakery script
 
 const app = document.getElementById('root');
 
@@ -67,7 +67,7 @@ aboutTxt.textContent="About Us";
 about.addEventListener("click", aboutClick);
 
 function aboutClick() {
-  alert("working on the About Us page.");
+  window.scrollTo(0, 2211);
 }
 
 const favorites = document.createElement('div');
@@ -78,7 +78,7 @@ favTxt.textContent="Our Favorites";
 favorites.addEventListener("click", favClick);
 
 function favClick() {
-  window.scrollTo(0, 2650);
+  window.scrollTo(0, 2760);
 }
 
 const us = document.createElement('div');
@@ -89,7 +89,7 @@ usTxt.textContent="Find Us Online";
 us.addEventListener("click", usClick);
 
 function usClick() {
-  window.scrollTo(0, 2350);
+  window.scrollTo(0, 2530);
 }
 
 //add menu
@@ -121,6 +121,30 @@ bakeryMenuImg.addEventListener("click", menuClick);
 bakeryMenuCard.appendChild(bakeryMenuImg);
 bakeryMenu.appendChild(bakeryMenuCard);
 
+
+// about us
+const aboutUs = document.createElement('div');
+aboutUs.setAttribute('class', 'container');
+
+const aboutUsCard = document.createElement('div');
+aboutUsCard.setAttribute('class', 'fullCard');
+
+const aboutUsHead = document.createElement('h1');
+aboutUsHead.textContent="About Us";
+const aboutUsText = document.createElement('h2');
+aboutUsText.textContent="Get Baked Colorado was dreamt up after all my friends simply could not" + 
+                        " believe the goodies I was bringing to parties were home-made." +
+                        " Now I am proud to offer all varieties of sweets in any shape or size." + 
+                        " After years of broken eggs and spilled flour, I have finely tuned all" + 
+                        " my recipes for maximum tastiness. I love letting my creativity shine" + 
+                        " in the kitchen, so whether you have a very specific idea in mind, or" +
+                        " you aren’t exactly sure what you’re looking for, I am the baker for you." +
+                        " \n" +
+                        " P.S. I am well versed in ketogenic desserts and can make a keto version of a lot of my treats if that’s what you need!";
+
+aboutUsCard.appendChild(aboutUsHead);
+aboutUsCard.appendChild(aboutUsText)
+aboutUs.appendChild(aboutUsCard);
 
 // our favorites tab
 const favTab = document.createElement('h2');
@@ -170,7 +194,7 @@ fPebTxt.textContent ="Fruity Pebble Cupcakes";
 fPeb.addEventListener("click", fPebClick);
 
 function fPebClick() {
-  window.open("photos/fpebbles.png");
+  window.open("photos/fPebbles.png");
 }
 
 // chocolate cupcakes
@@ -330,6 +354,7 @@ app.appendChild(menuUp);
 app.appendChild(head);
 app.appendChild(bio);
 app.appendChild(bakeryMenu);
+app.appendChild(aboutUs);
 app.appendChild(social);
 app.appendChild(container);
 app.appendChild(contact);
