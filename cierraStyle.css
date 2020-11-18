@@ -72,6 +72,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   cursor: default;
+  padding: 20px;
 }
 
 .card {
@@ -81,6 +82,26 @@ img {
   transition: all .2s linear;
   float: left;
   max-width: 42.6%;
+  padding: 6px;
+}
+
+.thirdCard {
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+  float: left;
+  max-width: 26.6%;
+  margin-right: -85px;
+}
+
+.twoThirdCard {
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+  float: left;
+  max-width: 58.6%;
   padding: 6px;
 }
 

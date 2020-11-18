@@ -118,7 +118,12 @@ const bakeryMenuImg = document.createElement('img');
 bakeryMenuImg.src = "photos/getBakedMenuNew.png";
 bakeryMenuImg.addEventListener("click", menuClick);
 
+const ketoMenuImg = document.createElement('img');
+ketoMenuImg.src = "photos/ketoMenu.png";
+ketoMenuImg.addEventListener("click", menuClick);
+
 bakeryMenuCard.appendChild(bakeryMenuImg);
+bakeryMenuCard.appendChild(ketoMenuImg);
 bakeryMenu.appendChild(bakeryMenuCard);
 
 
@@ -126,11 +131,21 @@ bakeryMenu.appendChild(bakeryMenuCard);
 const aboutUs = document.createElement('div');
 aboutUs.setAttribute('class', 'container');
 
+const aboutUsPicCard = document.createElement('div');
+aboutUsPicCard.setAttribute('class', 'thirdCard');
+const aboutUsPic = document.createElement('img');
+aboutUsPic.src="photos/aboutUsPic.JPG";
+
+aboutUsPicCard.appendChild(aboutUsPic);
+
 const aboutUsCard = document.createElement('div');
-aboutUsCard.setAttribute('class', 'fullCard');
+aboutUsCard.setAttribute('class', 'twoThirdCard');
 
 const aboutUsHead = document.createElement('h1');
-aboutUsHead.textContent="About Us";
+aboutUsHead.textContent="About Get Baked";
+
+const aboutUsText1 = document.createElement('h2');
+aboutUsText1.textContent="Hi, I'm Cierra.";
 const aboutUsText = document.createElement('h2');
 aboutUsText.textContent="Get Baked Colorado was dreamt up after all my friends simply could not" + 
                         " believe the goodies I was bringing to parties were home-made." +
@@ -143,7 +158,9 @@ aboutUsText.textContent="Get Baked Colorado was dreamt up after all my friends s
                         " P.S. I am well versed in ketogenic desserts and can make a keto version of a lot of my treats if that’s what you need!";
 
 aboutUsCard.appendChild(aboutUsHead);
-aboutUsCard.appendChild(aboutUsText)
+aboutUsCard.appendChild(aboutUsText1);
+aboutUsCard.appendChild(aboutUsText);
+aboutUs.appendChild(aboutUsPicCard);
 aboutUs.appendChild(aboutUsCard);
 
 // our favorites tab
