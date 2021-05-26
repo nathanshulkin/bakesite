@@ -33,6 +33,12 @@ logoImg.src = "cierraLogo/LogoFiles/ForWeb/small.png";
 logoImg.style.position="absolute";
 logoImg.style.marginTop="15px";
 
+logoMenu.addEventListener("click", logoClick);
+
+function logoClick() {
+  window.scrollTo(0, 0);
+}
+
 logoMenu.appendChild(logoImg);
 menuUp.appendChild(logoMenu);
 
@@ -67,7 +73,7 @@ aboutTxt.textContent="About Us";
 about.addEventListener("click", aboutClick);
 
 function aboutClick() {
-  window.scrollTo(0, 2211);
+  window.scrollTo(0, 3561);
 }
 
 const favorites = document.createElement('div');
@@ -78,7 +84,7 @@ favTxt.textContent="Our Favorites";
 favorites.addEventListener("click", favClick);
 
 function favClick() {
-  window.scrollTo(0, 2760);
+  window.scrollTo(0, 4430);
 }
 
 const us = document.createElement('div');
@@ -89,7 +95,7 @@ usTxt.textContent="Find Us Online";
 us.addEventListener("click", usClick);
 
 function usClick() {
-  window.scrollTo(0, 2530);
+  window.scrollTo(0, 4180);
 }
 
 //add menu
