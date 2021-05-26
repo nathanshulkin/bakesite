@@ -9,10 +9,13 @@ Cierra's Bakery stylesheet
 
 html {
   /*font-family: 'Verdana', sans-serif;*/
-  background-image: radial-gradient(#fff8f8, #b677d4);
+  background-image: radial-gradient(circle at center center, #fff8f8, #b677d4);
   background-size: auto;
+  background-blend-mode: multiply;
   cursor: default;
 }
+
+
 
 @font-face {
   font-family: cierraFont;
